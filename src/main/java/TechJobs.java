@@ -11,7 +11,7 @@ public class TechJobs {
 
     static Scanner in = new Scanner(System.in);
 
-    public static void main (String[] args) {
+    public static void main(String[] args) {
 
         // Initialize our field map with key/name pairs
         HashMap<String, String> columnChoices = new HashMap<>();
@@ -113,33 +113,47 @@ public class TechJobs {
                 validChoice = true;
             }
 
-        } while(!validChoice);
+        } while (!validChoice);
 
         return choiceKeys[choiceIdx];
     }
 
     // Print a list of jobs
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
-        HashMap<String, String> ArrayList = new HashMap<>();
-        if (someJobs.size() == 0) {
-            System.out.println("no results");
+        // HashMap<String, String> AllJobsArrayList = new HashMap<>();
+
+        for (HashMap<String, String> jobs : someJobs) {
+            System.out.println("*****");
+
+
+            for (HashMap.Entry<String, String> i : jobs.entrySet()) {
+                System.out.println(i.getKey() + ": " + i.getValue());
+            }
+            System.out.println("*****");
+            System.out.println("\n");
         }
-        System.exit(0);
-    } else if (someJobs.size() == ){
-        System.out.println("matching jobs include" + );
+
+        if (someJobs.isEmpty()) {
+            System.out.println("Job not found");
+        }
+    }
+}
+
+
+//if (someJobs.size() == 0) {
+//        System.out.println("No Results");
+//        } else {
+//        for (char c : ArrayList.toCharArray());
+//        System.out.println(c);
+//        for ( char e :  AllJobsArrayList.toCharArray());
+//        System.out.println("*****" + %s,c + %s,e + "*****");
 
 
 
-
-
-
-
-
-        //for( int i = 0; i < ArrayList.size(); i++);
 
        // for( int i = 0; i < HashMap.size(); i++);
 
        // TechJobs.printJobs(someJobs);
 
-    }
-}
+
+
