@@ -120,40 +120,29 @@ public class TechJobs {
 
     // Print a list of jobs
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
-        // HashMap<String, String> AllJobsArrayList = new HashMap<>();
+        //HashMap<String, String> AllJobsArrayList = new HashMap<>();
+        if (someJobs.size() == 0) {
+            System.out.print("No Results");
+        } else {
+            for (HashMap<String, String> job : someJobs) {
+                ;
+                //System.out.println(job);
+                for (Map.Entry<String, String> jobColumn : job.entrySet()) {
+                    System.out.println("*****" + jobColumn.getKey() + jobColumn.getValue() + "*****" + ")");
 
-        for (HashMap<String, String> jobs : someJobs) {
-            System.out.println("*****");
 
-
-            for (HashMap.Entry<String, String> i : jobs.entrySet()) {
-                System.out.println(i.getKey() + ": " + i.getValue());
+                }
             }
-            System.out.println("*****");
-            System.out.println("\n");
+
         }
 
-        if (someJobs.isEmpty()) {
-            System.out.println("Job not found");
-        }
     }
 }
 
 
-//if (someJobs.size() == 0) {
-//        System.out.println("No Results");
-//        } else {
-//        for (char c : ArrayList.toCharArray());
-//        System.out.println(c);
-//        for ( char e :  AllJobsArrayList.toCharArray());
-//        System.out.println("*****" + %s,c + %s,e + "*****");
+// for( int i = 0; i < HashMap.size(); i++);
 
-
-
-
-       // for( int i = 0; i < HashMap.size(); i++);
-
-       // TechJobs.printJobs(someJobs);
+// TechJobs.printJobs(someJobs);
 
 
 
