@@ -102,7 +102,7 @@ public class JobData {
         ArrayList <HashMap<String, String>> jobs = new ArrayList<>();
         for (HashMap<String, String> row: allJobs){
             for (HashMap.Entry<String, String> job: row.entrySet()){
-                if (job.getValue().toUpperCase().contains(value) && !jobs.contains(row)){
+                if (job.getValue().contains(value) && !jobs.contains(row)){
                     jobs.add(row);
                 }
             }

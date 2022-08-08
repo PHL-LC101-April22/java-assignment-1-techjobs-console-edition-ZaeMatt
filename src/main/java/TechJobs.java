@@ -125,7 +125,7 @@ public class TechJobs {
             System.out.print("No Results");
         } else {
             for (HashMap<String, String> job : someJobs) {
-                ;
+
                 //System.out.println(job);
                 for (Map.Entry<String, String> jobColumn : job.entrySet()) {
                     System.out.println("*****" + jobColumn.getKey() + jobColumn.getValue() + "*****" + ")");
