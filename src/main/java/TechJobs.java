@@ -128,7 +128,9 @@ public class TechJobs {
 
                 //System.out.println(job);
                 for (Map.Entry<String, String> jobColumn : job.entrySet()) {
-                    System.out.println("*****" + jobColumn.getKey() + jobColumn.getValue() + "*****" + ")");
+                    System.out.println(jobColumn.getKey()+": "+jobColumn.getValue());
+                }
+                System.out.println("*****");
 
 
                 }
@@ -137,12 +139,19 @@ public class TechJobs {
         }
 
     }
-}
+
 
 
 // for( int i = 0; i < HashMap.size(); i++);
 
 // TechJobs.printJobs(someJobs);
 
-
+//if (someJobs.size() == 0) {
+//        System.out.print("No Results");
+//        } else {
+//        for (HashMap<String, String> job : someJobs) {
+//
+//        //System.out.println(job);
+//        for (Map.Entry<String, String> jobColumn : job.entrySet()) {
+//        System.out.println("*****" + jobColumn.getKey() + jobColumn.getValue() + "*****" + ")");
 
